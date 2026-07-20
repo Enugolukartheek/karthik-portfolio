@@ -1,73 +1,243 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enugolu Kartheek Portfolio</title>
+<title>Enugolu Kartheek | Portfolio</title>
+
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
 body{
-font-family:Arial,sans-serif;
-max-width:1000px;
-margin:auto;
-padding:20px;
+background:#f4f7fc;
+color:#333;
 line-height:1.6;
 }
-h1,h2{
-color:#1f4e79;
+
+header{
+background:#0f172a;
+color:white;
+padding:60px 20px;
+text-align:center;
 }
+
+.profile-img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+margin-bottom:20px;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:20px;
+opacity:0.9;
+}
+
+.btn{
+display:inline-block;
+margin:10px;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#1d4ed8;
+}
+
 section{
-margin-bottom:30px;
+padding:60px 10%;
+}
+
+h2{
+color:#0f172a;
+margin-bottom:20px;
+font-size:32px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+}
+
+.skill{
+background:#2563eb;
+color:white;
+padding:15px;
+text-align:center;
+border-radius:10px;
+font-weight:bold;
+}
+
+.project{
+border-left:5px solid #2563eb;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.contact a{
+color:#2563eb;
+text-decoration:none;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+header h1{
+font-size:30px;
+}
 }
 </style>
 </head>
+
 <body>
 
+<header>
+
+<img src="karthik.png" alt="Kartheek" class="profile-img">
+
 <h1>Enugolu Kartheek</h1>
-<p><b>Data Analytics Aspirant | Python | MySQL | Power BI</b></p>
+
+<p>Data Analytics Aspirant | Python | MySQL | Power BI</p>
+
+<a href="https://www.linkedin.com/in/enugolu-kartheek-85275b413" target="_blank" class="btn">LinkedIn</a>
+
+<a href="https://github.com/Enugolukartheek" target="_blank" class="btn">GitHub</a>
+
+</header>
 
 <section>
 <h2>About Me</h2>
+
+<div class="card">
 <p>
-I am a B.Com (Computer Applications) graduate with hands-on experience in
-Python, MySQL, Power BI, and Excel. I am passionate about Data Analytics
-and Data Engineering and enjoy solving business problems using data.
+I am a B.Com (Computer Applications) graduate with hands-on experience in Python, MySQL, Power BI, and Advanced Excel. I have a strong interest in Data Analytics and Data Engineering and enjoy transforming raw data into meaningful business insights through analysis, visualization, and reporting.
 </p>
+</div>
 </section>
 
 <section>
-<h2>Skills</h2>
-<ul>
-<li>Python</li>
-<li>MySQL</li>
-<li>Power BI</li>
-<li>Advanced Excel</li>
-<li>HTML, CSS, JavaScript</li>
-</ul>
+<h2>Technical Skills</h2>
+
+<div class="skills">
+<div class="skill">Python</div>
+<div class="skill">MySQL</div>
+<div class="skill">Power BI</div>
+<div class="skill">Excel</div>
+<div class="skill">SQL</div>
+<div class="skill">Data Analytics</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+</div>
+
 </section>
 
 <section>
 <h2>Projects</h2>
+
+<div class="card project">
 <h3>HR Analytics Dashboard</h3>
+
 <p>
-Built an interactive dashboard using Power BI, MySQL, and Excel to analyze
-employee attrition, hiring trends, and workforce metrics.
+Developed an interactive dashboard using Power BI, MySQL, and Excel to analyze employee attrition, workforce trends, and hiring insights. Performed data cleaning, transformation, and visualization to support business decision-making.
 </p>
+
+</div>
+
 </section>
 
 <section>
 <h2>Education</h2>
+
+<div class="card">
+
+<h3>B.Com (Computer Applications)</h3>
+
 <p>
-Bachelor of Commerce (Computer Applications)<br>
 Yogi Vemana University<br>
-79%
+2022 - 2025<br>
+Percentage: 79%
 </p>
+
+</div>
+
+</section>
+
+<section>
+<h2>Certifications</h2>
+
+<div class="card">
+<ul>
+<li>Data Analytics - Palle Technologies</li>
+<li>Full Stack Development - Universal Technologies</li>
+</ul>
+</div>
+
 </section>
 
 <section>
 <h2>Contact</h2>
-<p>Email: karthikroyal288@gmail.com</p>
+
+<div class="card contact">
+
+<p>Email:
+<a href="mailto:karthikroyal288@gmail.com">
+karthikroyal288@gmail.com
+</a>
+</p>
+
 <p>Phone: +91 7661882096</p>
+
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/enugolu-kartheek-85275b413">
+View Profile
+</a>
+</p>
+
+<p>
+GitHub:
+<a href="https://github.com/Enugolukartheek">
+View Profile
+</a>
+</p>
+
+</div>
+
 </section>
+
+<footer>
+© 2026 Enugolu Kartheek | Portfolio Website
+</footer>
 
 </body>
 </html>
