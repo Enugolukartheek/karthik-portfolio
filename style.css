@@ -160,4 +160,10 @@ gap:10px;
 flex-wrap:wrap;
 justify-content:center;
 }
+.project-tagline{
+color:#60a5fa;
+font-size:18px;
+font-weight:600;
+margin-bottom:15px;
+}
 }
