@@ -3,235 +3,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Enugolu Kartheek | Data Analytics Portfolio</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
-}
+<link rel="stylesheet" href="style.css">
 
-body{
-background:#f5f7fb;
-color:#333;
-}
-
-header{
-background:linear-gradient(135deg,#0f172a,#1e3a8a);
-color:white;
-padding:60px 20px;
-text-align:center;
-}
-
-.profile-pic{
-width:180px;
-height:180px;
-border-radius:50%;
-object-fit:cover;
-border:5px solid white;
-margin-bottom:20px;
-}
-
-header h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-header p{
-font-size:20px;
-opacity:0.9;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:15px;
-margin-bottom:25px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-h2{
-color:#1e3a8a;
-margin-bottom:20px;
-}
-
-.skills{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-}
-
-.skill{
-background:#1e3a8a;
-color:white;
-padding:10px 15px;
-border-radius:25px;
-}
-
-.project{
-border-left:5px solid #1e3a8a;
-padding-left:20px;
-}
-
-.project img{
-width:100%;
-margin-top:15px;
-border-radius:10px;
-}
-
-.btn{
-display:inline-block;
-background:#1e3a8a;
-color:white;
-padding:12px 20px;
-text-decoration:none;
-border-radius:8px;
-margin-top:15px;
-}
-
-.btn:hover{
-background:#0f172a;
-}
-
-.contact a{
-display:block;
-margin:10px 0;
-color:#1e3a8a;
-text-decoration:none;
-font-weight:600;
-}
-
-footer{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-</style>
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
+<nav class="navbar">
+<div class="logo">Kartheek</div>
 
-<img src="karthik.png" alt="Kartheek" class="profile-pic">
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img src="karthik.png" class="profile-img">
 
 <h1>Enugolu Kartheek</h1>
 
-<p>Data Analytics Aspirant | Python | SQL | Power BI | Excel</p>
-
-</header>
-
-<div class="container">
-
-<div class="card">
-<h2>About Me</h2>
+<h2 id="typing"></h2>
 
 <p>
-I am a B.Com (Computer Applications) graduate passionate about Data Analytics and Business Intelligence.
-I have hands-on experience in Python, SQL, Power BI, and Excel. I enjoy transforming raw data into meaningful insights that support business decisions.
+Passionate Data Analytics Aspirant with hands-on experience in Power BI, SQL, Python and Excel.
 </p>
+
+<div class="buttons">
+
+<a href="Resume.pdf" class="btn" target="_blank">Resume</a>
+
+<a href="https://github.com/Enugolukartheek" class="btn" target="_blank">GitHub</a>
+
+<a href="https://www.linkedin.com/in/enugolu-kartheek-85275b413" class="btn" target="_blank">LinkedIn</a>
 
 </div>
 
-<div class="card">
+</div>
+
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+
+<div class="glass-card">
+<p>
+B.Com (Computer Applications) graduate passionate about Data Analytics, Business Intelligence and Data Visualization. Skilled in Power BI, SQL, Python and Excel with hands-on project experience.
+</p>
+</div>
+
+</section>
+
+<section id="skills">
 
 <h2>Skills</h2>
 
-<div class="skills">
+<div class="skills-grid">
 
-<span class="skill">Python</span>
-<span class="skill">SQL</span>
-<span class="skill">MySQL</span>
-<span class="skill">Power BI</span>
-<span class="skill">Excel</span>
-<span class="skill">HTML</span>
-<span class="skill">CSS</span>
-<span class="skill">JavaScript</span>
+<div class="skill-card">Python</div>
+<div class="skill-card">SQL</div>
+<div class="skill-card">Power BI</div>
+<div class="skill-card">Excel</div>
+<div class="skill-card">MySQL</div>
+<div class="skill-card">HTML</div>
 
 </div>
 
-</div>
+</section>
 
-<div class="card">
+<section id="projects">
 
 <h2>Projects</h2>
 
-<div class="project">
+<div class="project-card">
 
 <h3>HR Analytics Dashboard</h3>
 
 <p>
-Developed an interactive HR Analytics Dashboard using Power BI to analyze employee attrition, workforce trends, department performance, and key HR metrics.
+Interactive Power BI Dashboard for Employee Attrition Analysis and Workforce Insights.
 </p>
 
-<p>
-Key Insights:
-</p>
-
-<ul>
-<li>Employee Attrition Analysis</li>
-<li>Department-wise Performance</li>
-<li>Gender Distribution</li>
-<li>Workforce Trends</li>
-<li>Employee Demographics</li>
-</ul>
-
-<a href="https://github.com/Enugolukartheek/hr-analytics-dashboard" target="_blank" class="btn">
+<a href="https://github.com/Enugolukartheek/hr-analytics-dashboard" target="_blank">
 View Project
 </a>
 
 </div>
 
-</div>
+</section>
 
-<div class="card">
-
-<h2>Resume</h2>
-
-<p>Download my latest resume.</p>
-
-<a href="https://github.com/Enugolukartheek/Resume.pdf" target="_blank" class="btn">
-View Resume
-</a>
-
-</div>
-
-<div class="card contact">
+<section id="contact">
 
 <h2>Contact</h2>
 
-<a href="mailto:karthikenugolu3@gmail.com">
-📧 Email
-</a>
+<div class="glass-card">
 
-<a href="https://www.linkedin.com/in/enugolu-kartheek-85275b413" target="_blank">
-🔗 LinkedIn
-</a>
+<p>Email: karthikenugolu3@gmail.com</p>
 
-<a href="https://github.com/Enugolukartheek" target="_blank">
-💻 GitHub
+<p>
+GitHub:
+<a href="https://github.com/Enugolukartheek">
+Enugolukartheek
 </a>
+</p>
+
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/enugolu-kartheek-85275b413">
+Profile
+</a>
+</p>
 
 </div>
 
-</div>
+</section>
 
-<footer>
-
-© 2026 Enugolu Kartheek | Data Analytics Portfolio
-
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
